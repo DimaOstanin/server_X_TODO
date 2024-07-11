@@ -1,0 +1,17 @@
+{
+  "name": "server_x_todo",
+  "version": "1.0.0",
+  "description": "Test task for XIOMA",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Dima Ostanin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
