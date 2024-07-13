@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import taskRouter from "../src/routes/task.route.js";
 import authRouter from "../src/routes/auth.route.js";
+import usersRouter from "../src/routes/users.route.js";
 import { PORT } from "../src/utils/config.js";
 import dotenv from "dotenv";
 dotenv.config();
@@ -35,3 +36,4 @@ mongoose
 
 app.use('/api/task', taskRouter);
 app.use('/api/auth', authRouter);
+app.use('/api/users', usersRouter);

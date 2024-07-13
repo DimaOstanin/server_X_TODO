@@ -39,5 +39,5 @@ export const signin = async (req, res) => {
     }
 
     const token = jwt.sign({ userId: user._id }, JWT_SECRET);
-    res.json({ token , userId: user._id });
+    res.json({ token , userId: user._id , username: user.username});
 }

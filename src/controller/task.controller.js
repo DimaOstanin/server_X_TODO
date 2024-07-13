@@ -9,6 +9,7 @@ export const createTask = async (req, res) => {
         await task.save();
         res.status(201).json({ message: 'Task created', task });
     } catch (error) {
+        console.error('Error saving task:', error);
         res.status(500).json({ message: 'Error creating task', error });
     }
 };
